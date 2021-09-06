@@ -18,6 +18,7 @@ import down from "../assets/icon/down.png";
 import sad from "../assets/icon/sad.svg";
 
 import Data from "../Data.json";
+import UvIndex from "./UvIndex";
 
 const Container = styled.div`
   /* padding: 20px 30px; */
@@ -78,7 +79,7 @@ const CardDua = styled.div`
   margin-right: 5px;
   margin-top: 20px;
   margin-bottom: 10px;
-  height: 270px;
+  height: 250px;
 `;
 
 const WindAngka = styled.div`
@@ -95,7 +96,7 @@ const WindAngka = styled.div`
 const WindWsw = styled.div`
   display: flex;
   flex-direction: row;
-  margin-top: 40px;
+  margin-top: 10px;
   img {
     width: 30px;
     height: 30px;
@@ -190,23 +191,11 @@ const Week = () => {
           <Paragraf>UV Index</Paragraf>
           <CircularProgressbar value={percentage} text={`${percentage}%`} />
         </CardDua> */}
+        {/* <UvIndex></UvIndex> */}
         <CardContainerDua>
           <CardDua>
             <Paragraf>UV Index</Paragraf>
-            <ChangingProgressProvider values={[6]}>
-              {(value) => (
-                <CircularProgressbar
-                  value={value}
-                  text={`${value}`}
-                  circleRatio={0.75}
-                  styles={buildStyles({
-                    rotation: 1 / 2 + 1 / 8,
-                    strokeLinecap: "butt",
-                    trailColor: "#eee",
-                  })}
-                />
-              )}
-            </ChangingProgressProvider>
+            <UvIndex />
           </CardDua>
           <CardDua>
             <Paragraf>Wind Status</Paragraf>
@@ -271,7 +260,7 @@ const Week = () => {
                 class="fa-rotate-90"
                 style={{ fontSize: 50, color: "Dodgerblue" }}
               >
-                <i class="fa fa-toggle-on fa-flip-vertical"></i>
+                <i class="fa fa-toggle-on fa-flip-horizontal"></i>
               </span>
             </Humadity>
             <HumadityIcon>

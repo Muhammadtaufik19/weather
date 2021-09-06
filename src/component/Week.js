@@ -48,6 +48,7 @@ const Card = styled.div`
   background-color: white;
   img {
     width: 60%;
+    /* background-color: aqua; */
   }
 `;
 
@@ -159,14 +160,7 @@ const Visial = styled.div`
 // ----------------------------------------------------------------------------------
 const Week = () => {
   const [hari, setHari] = useState(Data);
-  const arr = [
-    {
-      hari: "Senin",
-    },
-    {
-      hari: "Selasa",
-    },
-  ];
+
   console.log(hari);
   const percentage = 7;
   return (
@@ -177,7 +171,8 @@ const Week = () => {
             return (
               <Card>
                 <Paragraf black>{item.hari}</Paragraf>
-                <img src={item.Img} alt="" />
+                {/* <img src="`../assets/icon/$(item.Img)`" alt="" /> */}
+                <img src={sun} alt="" />
                 <Detail>
                   <Paragraf black>{item.suhua} &deg;</Paragraf>
                   <Paragraf>{item.suhu2} &deg;</Paragraf>

@@ -1,0 +1,44 @@
+
+[
+        {
+            "hari" : "Sun",
+            "suhua" : "15",
+            "suhu2" : "-3",
+            "Img" : "icon/sun.png"
+            
+            
+        },
+        {
+            "hari" : "Mon",
+            "suhua" : "12",
+            "suhu2" : "7",
+            "img" : "icon/cloudy.png"
+        },
+        {
+            "hari" : "Tue",
+            "suhua" : "9",
+            "suhu2" : "7",
+            "img" : "icon/rain.png"
+        },
+        {
+            "hari" : "Wed",
+            "suhua" : "5",
+            "suhu2" : "2",
+            "img" : "icon/snow.png"
+        },   {
+            "hari" : "Thue",
+            "suhua" : "5",
+            "suhu2" : "2"
+        },
+        {
+            "hari" : "Fri",
+            "suhua" : "4",
+            "suhu2" : "4"
+        },
+        {
+            "hari" : "Sat",
+            "suhua" : "3",
+            "suhu2" : "-3"
+        }
+
+    ]
